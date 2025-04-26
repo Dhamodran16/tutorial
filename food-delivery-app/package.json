@@ -1,0 +1,16 @@
+{
+  "name": "food-delivery-app",
+  "version": "1.0.0",
+  "description": "A simple food delivery web app",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && nodemon crude.js",
+    "client": "cd frontend && npm start"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
